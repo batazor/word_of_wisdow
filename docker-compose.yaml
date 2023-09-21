@@ -1,0 +1,17 @@
+version: '2.4'
+
+services:
+
+  client:
+    build:
+      context: .
+      dockerfile: ops/dockerfiles/client.Dockerfile
+    container_name: client
+
+  server:
+    build:
+      context: .
+      dockerfile: ops/dockerfiles/server.Dockerfile
+    container_name: server
+    ports:
+      - "8080:8080"

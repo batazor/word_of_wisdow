@@ -2,6 +2,13 @@
 
 Client-Server application. Sends a quote in case of PoW calculation
 
+### Getting Started
+
+```bash
+make help
+make up
+```
+
 ### References
 
 - [PoW](https://en.wikipedia.org/wiki/Proof-of-work_system)
