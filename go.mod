@@ -3,7 +3,7 @@ module github.com/batazor/word_of_wisdow
 go 1.21.0
 
 require (
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.8.4
 	go.uber.org/goleak v1.2.1
 	go.uber.org/zap v1.26.0
 )
