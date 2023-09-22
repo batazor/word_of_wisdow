@@ -16,14 +16,14 @@ func main() {
 	defer cancel()
 
 	// Init logger
-	logger, err := logger.New()
+	log, err := logger.New()
 	if err != nil {
 		panic(err)
 	}
 
 	// Init server
 	uri := "localhost:8080"
-	server, err := tcp.NewServer(ctx, uri, logger)
+	server, err := tcp.NewServer(ctx, uri, log)
 	if err != nil {
 		panic(err)
 	}
@@ -36,7 +36,7 @@ func main() {
 
 	// read data from the server
 	for msg := range server.ReadCh {
-		logger.Info("msg", zap.String("msg", string(msg)))
+		log.Info("msg", zap.String("msg", string(msg)))
 
 		// get random quote
 		item, err := quotesRepository.GetRandomItem()
@@ -45,7 +45,10 @@ func main() {
 		}
 
 		replyMessage := fmt.Sprintf("%s\n", item.Quote)
-		server.Send([]byte(replyMessage))
+		errSend := server.Send([]byte(replyMessage))
+		if errSend != nil {
+			panic(errSend)
+		}
 	}
 
 	// TODO: Graceful shutdown
