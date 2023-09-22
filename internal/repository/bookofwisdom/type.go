@@ -1,4 +1,4 @@
-package bookofwisdom
+package repository
 
 type Repository struct {
 	quotes []*Quote

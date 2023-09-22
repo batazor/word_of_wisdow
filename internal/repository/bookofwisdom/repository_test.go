@@ -1,11 +1,11 @@
-package bookofwisdom
+package repository
 
 import (
 	"testing"
 )
 
 func TestNew(t *testing.T) {
-	repo, err := New()
+	repo, err := New("data.json")
 	if err != nil {
 		t.Fatalf("Failed to create repository: %s", err)
 	}
