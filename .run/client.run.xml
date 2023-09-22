@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="client" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <module name="word_of_wisdow" />
+    <working_directory value="$PROJECT_DIR$" />
+    <EXTENSION ID="software.aws.toolkits.jetbrains.core.execution.GoAwsConnectionRunConfigurationExtension">
+      <option name="credential" />
+      <option name="region" />
+      <option name="useCurrentConnection" value="false" />
+    </EXTENSION>
+    <kind value="PACKAGE" />
+    <package value="github.com/batazor/word_of_wisdom/cmd/client" />
+    <directory value="$PROJECT_DIR$" />
+    <filePath value="$PROJECT_DIR$/cmd/client/client.go" />
+    <method v="2" />
+  </configuration>
+</component>

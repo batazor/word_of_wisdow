@@ -1,8 +1,8 @@
 package proofofwork
 
 import (
-	"github.com/batazor/word_of_wisdow/internal/domain/block"
-	"github.com/batazor/word_of_wisdow/internal/proofofwork/simple"
+	"github.com/batazor/word_of_wisdom/internal/domain/block"
+	"github.com/batazor/word_of_wisdom/internal/proofofwork/simple"
 )
 
 // New returns a new PoW instance.

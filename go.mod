@@ -1,4 +1,4 @@
-module github.com/batazor/word_of_wisdow
+module github.com/batazor/word_of_wisdom
 
 go 1.21.0
 

@@ -3,7 +3,7 @@ package proofofwork
 import (
 	"time"
 
-	"github.com/batazor/word_of_wisdow/internal/domain/block"
+	"github.com/batazor/word_of_wisdom/internal/domain/block"
 )
 
 // NewBlock creates and returns Block

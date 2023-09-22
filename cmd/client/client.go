@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/batazor/word_of_wisdow/internal/pkg/logger"
-	"github.com/batazor/word_of_wisdow/internal/pkg/tcp"
+	"github.com/batazor/word_of_wisdom/internal/pkg/logger"
+	"github.com/batazor/word_of_wisdom/internal/pkg/tcp"
 )
 
 func main() {

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/batazor/word_of_wisdow/internal/pkg/logger"
+	"github.com/batazor/word_of_wisdom/internal/pkg/logger"
 	"go.uber.org/goleak"
 )
 

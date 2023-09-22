@@ -13,7 +13,7 @@ ARG CI_COMMIT_TAG
 ENV GOEXPERIMENT=arenas,cgocheck2,loopvar
 ENV PGO_PATH=auto
 
-WORKDIR /go/github.com/batazor/word_of_wisdow
+WORKDIR /go/github.com/batazor/word_of_wisdom
 
 # Load dependencies
 COPY go.mod go.sum ./
@@ -40,7 +40,7 @@ LABEL org.opencontainers.image.description="Word of wisdom - client"
 LABEL org.opencontainers.image.authors="@batazor"
 LABEL org.opencontainers.image.vendor="@batazor"
 LABEL org.opencontainers.image.licenses="MIT"
-LABEL org.opencontainers.image.source="https://github.com/batazor/word_of_wisdow"
+LABEL org.opencontainers.image.source="https://github.com/batazor/word_of_wisdom"
 LABEL org.opencontainers.image.revision=$CI_COMMIT_SHA
 
 # Install dependencies
@@ -55,4 +55,4 @@ ENTRYPOINT ["/sbin/tini", "--"]
 
 WORKDIR /app/
 CMD ["./app"]
-COPY --from=builder /go/github.com/batazor/word_of_wisdow/app /app
+COPY --from=builder /go/github.com/batazor/word_of_wisdom/app /app
