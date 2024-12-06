@@ -32,7 +32,7 @@ RUN CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH \
   -trimpath \
   -o app cmd/client/client.go
 
-FROM alpine:3.18
+FROM alpine:3.21
 
 LABEL maintainer=batazor111@gmail.com
 LABEL org.opencontainers.image.title="Word of wisdom - client"
